@@ -25,7 +25,7 @@ def pre_process(df):
 
     df['car_age']=current_yr-df['year_of_manufacture']
 
-    df=df.drop(["car_name","year_of_manufacture"],axis=1)
+    df=df.drop(["year_of_manufacture"],axis=1)
 
     
     return df
